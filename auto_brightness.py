@@ -6,7 +6,7 @@ import subprocess
 import time
 
 # Config
-CITY = LocationInfo("Berlin", "Germany")
+CITY = LocationInfo("Sofia")
 DAY_LEVEL = 60
 NIGHT_LEVEL = 10
 FADE_DURATION_MIN = 15
