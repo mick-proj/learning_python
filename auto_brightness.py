@@ -8,9 +8,9 @@ import time
 # Config
 CITY = LocationInfo("Sofia", "Bulgaria")
 DAY_LEVEL = 60
-NIGHT_LEVEL = 10
+NIGHT_LEVEL = 15
 FADE_DURATION_MIN = 15
-FADE_STEPS = 15
+FADE_STEPS = 10
 
 def set_brightness(level: int):
     subprocess.run([
@@ -28,8 +28,8 @@ def fade_brightness(start: int, end: int, duration_minutes: int = FADE_DURATION_
 while True:
     today = datetime.now()
     s = sun(CITY.observer, date=today)
-    sunrise = s["sunrise"].replace(tzinfo=None)
-    sunset = s["sunset"].replace(tzinfo=None)
+    sunrise = (s["sunrise"] + timedelta(hours=1.5)).replace(tzinfo=None)
+    sunset = (s["sunset"] + timedelta(hours=1.5)).replace(tzinfo=None)
     now = datetime.now()
 
     if sunrise < now < sunset:
