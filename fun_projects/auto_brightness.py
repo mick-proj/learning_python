@@ -7,7 +7,7 @@ import time
 
 # Config
 CITY = LocationInfo("Sofia", "Bulgaria")
-DAY_LEVEL = 90
+DAY_LEVEL = 70
 NIGHT_LEVEL = 15
 FADE_DURATION_MIN = 15
 FADE_STEPS = 10
