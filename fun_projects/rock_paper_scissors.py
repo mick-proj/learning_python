@@ -25,16 +25,12 @@ while True:
     move_number = random.randint(1, 3)
     if move_number == 1:
         computer_move = 'r'
+        print('ROCK')
     elif move_number == 2:
         computer_move = 'p'
+        print('PAPER')
     elif move_number == 3:
         computer_move = 's'
-
-    if computer_move == 'r':
-        print('ROCK')
-    elif computer_move == 'p':
-        print('PAPER')
-    elif computer_move == 's':
         print('SCISSORS')
 
     if player_move == computer_move:
