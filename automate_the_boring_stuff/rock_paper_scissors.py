@@ -32,7 +32,7 @@ while True:
         computer_move = 'p'
         print("PAPER")
     elif move_number == 3:
-        computer_move == 's'
+        computer_move = 's'
         print("SCISSORS")
 
     if player_move == computer_move:
